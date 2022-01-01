@@ -17,7 +17,7 @@ export class Lambdas3Stack extends Stack {
     //Create Lambda Function
     const mylambda = new lambda.Function(this, "s3eventtriggerLambda",{
       runtime:lambda.Runtime.PYTHON_3_9,
-      code: lambda.Code.fromAsset("./lambda"),
+      code: lambda.Code.fromAsset("lambda"),
       handler:"myfirstlambda.handle"
     });
 
